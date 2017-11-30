@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<body>
+	<div class="top">
+		<a href="#">导航管理</a>
+		<a href="#">轮播图管理</a>
+		<a href="#">文章管理</a>
+		<a href="/admin/news">新闻管理</a>
+		<a href="#">联系我们管理</a>
+	</div>
+	<form action="?" method="post" enctype="multipart/form-data">
+		<table border="1">
+			<tr>
+				<td>标题</td>
+				<td>
+					<input type="text" name="title"/>
+				</td>
+			</tr>
+			<tr>
+				<td>描述</td>
+				<td>
+					<textarea name="description"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>图片</td>
+				<td>
+					<input type="file" name="f1"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="添加"/>
+				</td>
+			</tr>
+		</table>	
+	</form>
+	<div>
+		<table border="1" width="800px">
+			<tr>
+				<td>标题</td>
+				<td>描述</td>
+				<td>图片</td>
+				<td>操作</td>
+			</tr>
+			<% if(data.length==0){  %>
+			<tr>
+				<td colspan="4" align="center">暂无数据</td>
+			</tr>
+			<% }else{ %>
+				<% for(var i=0;i<data.length;i++){ %>
+				<tr>
+					<td><%=data[i].ntitle %></td>
+					<td><%=data[i].ndescription  %></td>
+					<td>
+						<img width="30px" height="30px" src="/upload/<%=data[i].nsrc %>"
+					</td>
+					<td>
+						<a href="/admin/news/update?id=<%=data[i].nid%>">修改</a>
+						|
+						<a href="/admin/news/del?id=<%=data[i].nid%>&pic=<%=data[i].nsrc %>" onclick="return confirm('你确定要删除吗?')">删除</a>
+					</td>
+				</tr>
+				<% } %>
+			<% } %>
+		</table>
+	</div>
+</body>
+</html>

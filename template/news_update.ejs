@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<body>
+	原数据：
+	<form action="/admin/news/update" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="id" value="<%=data[0].nid %>" />
+		<input type="hidden" name="filename" value="<%=data[0].nsrc%>" />
+		<table border="1" width="800px">
+			<tr>
+				<td>标题</td>
+				<td>
+					<input type="text" name="title" value="<%=data[0].ntitle%>" />
+				</td>
+			</tr>
+			<tr>
+				<td>描述</td>
+				<td>
+					<textarea name="description" ><%=data[0].ndescription%></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>图片</td>
+				<td>
+					<input type="file" name="f1" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="修改"/>
+				</td>
+			</tr>
+		</table>
+		
+	</form>
+	
+	
+</body>
+</html>

@@ -1,0 +1,272 @@
+.carousel-img img{
+	margin: 0 auto;
+}
+#dv{
+	margin-top: 50px;
+}
+.carousel-img .item{
+	background-color: black;
+}
+.carousel-control{
+	font-size:50px
+}
+.tab-h2{
+	font-size: 20px;
+	text-align: center;
+	text-spacing:1px;
+	color: #0059b2
+}
+.tab-p{
+	font-size: 15px;
+	text-align: center;
+	text-spacing: 1px;
+	color: #999;
+}
+.tab1{
+	margin: 30px 0px;
+	color: #666;
+}
+.media{
+	padding-top:20px;
+}
+.media img{
+	width:200px;
+	
+}
+.media .media-heading{
+	margin:5px 0px 20px 0px;
+}
+
+#footer{
+	background-color: #ccc;
+	border-top:1px solid #ccc;
+	padding:20px;
+	text-align: center;
+}
+
+.tab2{
+	background-color: #eee;
+	padding:60px 20px;
+	text-align: center;
+}
+.tab2 img{
+	width:70%
+}
+.tab3 img{
+	width:70%
+}
+.tab3{
+	padding:40px 0px;
+	text-align: center;
+}
+.text h3{
+	font-size:20px
+}
+.text p{
+	font-size: 14px;
+}
+.jumbotron{
+	color:#ccc;
+	margin:50px 0 0 0;
+	background-color: black;
+}
+.jumbotron h1{
+	font-size:26px;
+}
+.jumbotron h4{
+	font-size: 16px;
+}
+#infomation{
+	background-color: #eee;
+	padding:40px 0;
+}
+
+.info-content{
+	background-color: #FFF;
+	margin: 0 0 20px 0;
+	box-shadow: 2px 2px 3px #ccc;
+}
+.info-content img{
+	padding:12px 0;
+}
+.info-content h4{
+	font-size: 14px;
+	color:#333;
+	padding-top:2px
+}
+.info-content p{
+	line-height: 1.6;
+}
+.info-right{
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #ccc;
+}
+.info-right blockquote{
+	padding:0;
+	margin: 0;
+}
+.info-right h2{
+	font-size:20px;
+	color:#333;
+	padding:5px
+}
+.info-right h4{
+	color:#CCC;
+	font-size: 16px;
+}
+#case{
+	padding:40px 0;
+	background-color: #eee;
+	text-align: center;
+}
+#case h4{
+	color: #666;
+}
+#case p{
+	color: #666;
+	line-height: 1.6;
+}
+#about{
+	padding:40px 0;
+	color: #ccc;
+}
+#about a{
+	color: cornflowerblue;
+}
+#about .about{
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.about h3{
+	color: #333;
+	font-size: 18px;
+	border-bottom: 1px solid #eee;
+	padding:20px 0;
+	margin: 0 0 10px 0;
+}
+.about p{
+	line-height: 2;
+	font-size: 13px;
+}
+
+
+
+
+/*没有小于768，是因为3是以移动端为优先涉及*/
+@media(min-width:768px){
+.tab-h2{
+	font-size: 26px;
+
+}
+.tab-p{
+	font-size: 16px;
+}
+.text h3{
+	font-size:22px
+}
+.text p{
+	font-size: 15px;
+}
+.tab2-text{
+	float:left
+}
+.tab2-img{
+	float:right
+}
+.jumbotron{
+	color:#ccc
+}
+.jumbotron h1{
+	font-size:30px;
+}
+.jumbotron h4{
+	font-size: 16px;
+}
+.info-content h4{
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.about h3{
+	font-size: 19px;
+}
+.about p{
+	font-size: 14px;
+}
+	
+}
+@media(min-width:992px){
+.tab-h2{
+	font-size: 28px;
+
+}
+.tab-p{
+	font-size: 17px;
+}
+.text h3{
+	font-size:24px
+}
+.text p{
+	font-size: 16px;
+}
+.jumbotron{
+	color:#ccc
+}
+.jumbotron h1{
+	font-size:33px;
+}
+.jumbotron h4{
+	font-size: 17px;
+}
+.info-content h4{
+	font-size: 18px;
+}
+.about h3{
+	font-size: 20px;
+}
+.about p{
+	line-height: 2;
+	font-size: 15px;
+}
+
+
+
+}
+@media(min-width:1200px){
+.tab-h2{
+	font-size: 30px;
+
+}
+.tab-p{
+	font-size: 18px;
+}
+.text h3{
+	font-size:26px
+}
+.text p{
+	font-size: 18px;
+}
+.jumbotron h1{
+	font-size:36px;
+}
+.jumbotron h4{
+	font-size: 18px;
+}
+.info-content h4{
+	font-size: 20px;
+}
+.about h3{
+	font-size: 22px;
+}
+.about p{
+
+	font-size: 16px;
+}
+
+
+	
+}
+
+

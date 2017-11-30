@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">  
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/anli.css"/>
+	</head>
+	<body>
+	
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand" style="padding-top:8px">
+					<img src="image/logo.jpg"/>
+				</a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#collapse" >
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="anliindex.html">旅游</a></li>
+					<li class="active"><a href="#">小吃</a></li>
+					<li><a href="about.html">社会</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>	
+	<div class="jumbotron">
+		<div class="container">
+			<group>
+				<h1>小吃</h1>
+				<h4>传统小吃展示。。。</h4>
+			</group>
+		</div>
+	</div>
+	<div id="case">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>概况</h4>
+							<p>北京是世界第八大“美食之城”，居内地之首。</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>京剧</h4>
+							<p>京剧是中国国粹。京剧的源头还要追溯到几种古老的地方戏剧</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>音乐</h4>
+							<p>门头沟京西幡乐、通州运河船工号子、顺义曾庄大鼓</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>舞蹈</h4>
+							<p>门头沟京西太平鼓、密云蝴蝶会、米粮屯高跷会</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>戏剧</h4>
+							<p>昆曲、京剧、河北梆子、大兴诗赋闲、柏峪燕歌戏</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>曲艺</h4>
+							<p>相声、岔曲、单弦、京韵大鼓、平谷调、京西太平鼓</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>杂技与竞技</h4>
+							<p>天桥中幡、抖空竹、帽山满族二魁摔跤、围棋、中国象棋</p>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="image/bantu.jpg"/>
+						<div class="caption">
+							<h4>美术</h4>
+							<p>北京牙雕工艺、曹氏风筝工艺、北京玉器工艺</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>	
+	<footer id="footer">
+		<div class="container">
+			<p>制作人：beta</p>
+			<p>联系地址：北京市顺义区白马路中关村工业园</p>
+		</div>		
+	</footer>
+		
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$("#dv").carousel({
+		interval:2000
+	})
+	$(function(){
+		$(".text").eq(0).css({"margin-top":($(".getImgHeight").eq(0).height()-$(".text").eq(0).height())/2+"px"})
+		$(".text").eq(1).css({"margin-top":($(".getImgHeight").eq(1).height()-$(".text").eq(1).height())/2+"px"})
+		
+		$(window).resize(function(){
+			$(".text").eq(0).css({"margin-top":($(".getImgHeight").eq(0).height()-$(".text").eq(0).height())/2+"px"})
+			$(".text").eq(1).css({"margin-top":($(".getImgHeight").eq(1).height()-$(".text").eq(1).height())/2+"px"})
+			
+		})
+	})
+	
+	
+	/*$(function(){
+		$(".carousel-control").css({'line-height':$(".carousel-img").height()+"px"})
+		$(window).resize(function(){
+			$(".carousel-control").css({'line-height':$(".carousel-img").height()+"px"})	
+		})
+		
+	})*/
+	
+	
+	
+/*	$.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a",function(res){
+		console.log(res)
+	})
+	$.ajax({
+		url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a",
+		type:"get",
+		dataType:'JSONP',
+		success:function(res){
+			console.log(res)
+		}
+	})*/
+</script>

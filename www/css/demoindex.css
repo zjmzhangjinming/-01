@@ -1,0 +1,119 @@
+.daohang .navbar-brand{
+	padding-top:8px
+}
+#dv{
+	margin-top: 50px;
+}
+.carousel-img img{
+	margin: 0 auto;
+}
+.carousel-img{
+	background-color: black;
+}
+.tab1{
+	margin: 30px 0;
+}
+.tab1 .tab-h2{
+	font-size: 25px;
+	text-align: center;
+	color: #0059B2;
+	
+}
+.tab1 .tab-p{
+	font-size: 12px;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.tab1 .media-heading{
+	padding-bottom: 10px;
+}
+.tab1 .media{
+	padding-top:20px;
+}
+.tab1 .media img{
+	width:200px
+}
+.tab2{
+	background-color: red;
+	padding:60px 20px;
+	text-align: center;
+	color: white;
+}
+.tab2 img,.tab3 img{
+	width:100%;
+}
+.tab2 h3,.tab3 h3{
+	padding-bottom: 5px;	
+}
+.tab2 p,.tab3 p{
+	line-height: 1.5;
+}
+.tab3{
+	padding:60px 20px;
+	text-align: center;
+}
+#footer{
+	padding:25px;
+	text-align:center;
+	border-top:1px solid #C0C0C0;
+	background-color: #ccc;
+}
+
+.jumbotron{
+	background-color: black;
+	color: #ccc;
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+.jumbotron h1{
+	font-size: 26px;
+}
+.jumbotron p{
+	font-size: 16px;
+}
+#case{
+	background-color: red;
+	text-align: center;
+	padding: 30px 0;
+}
+#about{
+	padding: 40px 0;
+}
+#about h3{
+	padding-bottom: 20px;
+	border-bottom: 1px solid red;
+	margin-bottom: 15px;
+}
+#about .border-shadow{
+	box-shadow: 2px 2px 3px brown;
+}
+
+@media(min-width:768px ) {
+.tab1 .tab-h2{
+	font-size: 27px;	
+}
+.tab1 .tab-p{
+	font-size: 13px;
+}	
+}
+@media(min-width:992px ) {
+.tab1 .tab-h2{
+	font-size: 29px;	
+}
+.tab1 .tab-p{
+	font-size: 14px;
+}		
+}
+@media(min-width:1200px ) {
+.tab1 .tab-h2{
+	font-size: 32px;	
+}
+.tab1 .tab-p{
+	font-size: 15px;
+}		
+}
+
+
+
+

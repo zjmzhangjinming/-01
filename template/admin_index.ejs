@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.top{
+			height: 50px;
+			background-color:#ccc;
+		}
+		.center{
+			margin-top: 10px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="top">
+		<a href="#">导航管理</a>
+		<a href="#">轮播图管理</a>
+		<a href="#">文章管理</a>
+		<a href="/admin/news">新闻管理</a>
+		<a href="#">联系我们管理</a>
+	</div>
+	<div>
+		<form action="/admin/nav" method="post">
+			<table border="1" width="300px" align="center">
+				<tr>
+					<td>标题</td>
+					<td>
+						<input type="text" name="title" />
+					</td>
+				</tr>
+				<tr><td colspan="2" align="center">
+					<input type="submit" value="添加" />
+				</td></tr>
+			</table>
+		</form>		
+	</div>
+	
+	
+	
+	<div class="center">
+		<table border="1" width="900px" align="center">
+			<tr>
+				<th>id</th>
+				<th>标题</th>
+				<th>操作</th>
+			</tr>
+			<% if(navList.length==0){ %>
+				<tr><td colspan="3">暂无数据</td></tr>
+			<% } else{ %>
+			<% for(var i=0;i<navList.length;i++){ %>
+			<tr>
+				<td><%=navList[i].nid %></td>
+				<td><%=navList[i].ntitle %></td>
+				<td>
+					<a href="?act=update&id=<%=navList[i].nid  %>">修改</a>	
+					|
+					<a href="?act=del&id=<%=navList[i].nid  %>" onclick="return confirm('确定要删除吗？？')">删除</a>
+				</td>
+			</tr>
+			<% } %>
+			<%  } %>
+		</table>
+	</div>
+	<% if((typeof update)!="undefined"){ %>
+	<div>
+		<form action="/admin/nav" method="get">
+			<input type="hidden" name="act" value="xiugai" />
+			<input type="hidden" name="id" value="<%=update[0].nid %>" />
+			<table border="1" width="300px">
+			<tr>
+				<td>标题</td>
+				<td>
+					<input type="text" name="title" value="<%=update[0].ntitle %>" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="修改" />
+				</td>
+			</tr>
+			</table>		
+		</form>		
+	</div>
+	<% } %>
+</body>
+</html>

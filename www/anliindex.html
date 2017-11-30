@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">  
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/anli.css"/>
+	</head>
+	<body>
+		<div id="dv">
+			
+		
+		<!--<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" style="padding-top:5px">
+						<img src="image/logo.jpg"/>
+					</a>
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">brand</a></li>
+						<li><a href="#">home</a></li>
+						<li><a href="#">history</a></li>
+						<li><a href="#">hope</a></li>
+						<li><a href="#">connect</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>-->
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand" style="padding-top:8px">
+					<img src="image/logo.jpg"/>
+				</a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#collapse" >
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li class="active" v-for="item in msg"><a href="anliindex.html">{{item.ntitle}}</a></li>
+					<!--<li><a href="anli.html">小吃</a></li>
+					<li><a href="about.html">社会</a></li>-->
+				</ul>
+			</div>
+		</div>
+	</nav>	
+	<div id="dv" class="carousel slide">
+		<ul class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#dv"></li>
+			<li data-slide-to="1" data-target="#dv"></li>
+		</ul>
+		<div class="carousel-inner carousel-img">
+			<div class="item active">
+				<img src="img/c.jpg"/>
+			</div>
+			<div class="item">
+				<img src="img/d.jpg"/>
+			</div>
+		</div>
+		<!--<a href="#dv" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+		<a href="#dv" data-slide="next" class="carousel-control right">&rsaquo;</a>-->
+		<a href="#dv" data-slide="prev" class="carousel-control left" >
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#dv" data-slide="next" class="carousel-control right" >
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	<div class="tab1">
+		<div class="container">
+			<h2 class="tab-h2">欢迎来到美丽的城市-北京</h2>
+			<p class="tab-p">这里有你喜欢的、吃的、玩的、喝的、唱的</p>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 ">
+					<div class="media">
+						<div class="media-left">
+							<img src="image/changcheng.jpg" class="media-object"/>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">旅游</h4>
+							<p class="text-muted">北京有世界上最大的皇宫紫禁城、祭天神庙天坛、皇家园林北海公园、颐和园和圆明园，还有八达岭长城、慕田峪长城等名胜古迹。</p>
+							<p class="text-muted">2017-09-01</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 ">
+					<div class="media">
+						<div class="media-left">
+							<img src="image/wenhua.jpg" class="media-object"/>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">小吃</h4>
+							<p class="text-muted">全聚德，便宜坊，东来顺，仿膳饭庄，稻香村，沙锅居，白魁老号，烤肉季，六必居，都一处烧麦馆，鸿宾楼，烤肉宛，王致和</p>
+							<p class="text-muted">2017-09-01</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 ">
+					<div class="media">
+						<div class="media-left">
+							<img src="image/beijing.jpg" class="media-object"/>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">文化</h4>
+							<p class="text-muted">四合院是以正房、倒座房、东西厢房围绕中间庭院形成平面布局的北方传统住宅的统称。北京四合院源于元代院落式民居，是老北京城最主要的民居建筑。</p>
+							<p class="text-muted">2017-09-01</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 ">
+					<div class="media">
+						<div class="media-left">
+							<img src="image/niaochao.jpg" class="media-object"/>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">体育</h4>
+							<p class="text-muted">北京市曾1990年北京亚运会、第二十一届世界大学生运动会、2008年北京奥运会及2008年北京残奥会、2014国际泳联花样游泳大奖赛。</p>
+							<p class="text-muted">2017-09-01</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div v-for="(news,k) in newsList" :class="k%2==0?'tab2':'tab3'">
+		<div class="container">
+			<div class="row">				
+				<div class="getImgHeight col-md-6 col-sm-6" :class="{'tab2-img':k%2==0}" >
+					<img :src="'/upload/'+news.nsrc" class="img-responsive center-block"/>
+				</div>
+				<div class="text col-md-6 col-sm-6 " :class="{'tab2-text':k%2==0}">
+					<h3>{{news.ntitle}}</h3>
+					<p>{{news.ndescription}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container">
+			<p>制作人：beta</p>
+			<p>联系地址：北京市顺义区白马路中关村工业园</p>
+			<p>联系方式：www.baidu.com</p>
+		</div>		
+	</footer>
+	</div>	
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	new Vue({
+		el:"#dv",
+		mounted:function(){
+			this.$nextTick(function(){
+				this.nav()
+			})			
+		},
+		data:{
+			msg:[],
+			newsList:[]
+		},
+		methods:{
+			nav:function(){
+				var _this=this;
+				$.ajax({
+					type:"get",
+					url:"/getNav",
+					success:function(res){
+						_this.msg=res
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"/getNews",
+					success:function(res){
+						console.log(res)
+						_this.newsList=res
+					}
+				});
+			}
+		}
+	})
+	
+	
+	
+	
+	$("#dv").carousel({
+		interval:2000
+	})
+	$(function(){
+		$(".text").eq(0).css({"margin-top":($(".getImgHeight").eq(0).height()-$(".text").eq(0).height())/2+"px"})
+		$(".text").eq(1).css({"margin-top":($(".getImgHeight").eq(1).height()-$(".text").eq(1).height())/2+"px"})
+		
+		$(window).resize(function(){
+			$(".text").eq(0).css({"margin-top":($(".getImgHeight").eq(0).height()-$(".text").eq(0).height())/2+"px"})
+			$(".text").eq(1).css({"margin-top":($(".getImgHeight").eq(1).height()-$(".text").eq(1).height())/2+"px"})
+			
+		})
+	})
+	
+	/*$(function(){
+		$(".carousel-control").css({'line-height':$(".carousel-img").height()+"px"})
+		$(window).resize(function(){
+			$(".carousel-control").css({'line-height':$(".carousel-img").height()+"px"})	
+		})		
+	})*/	
+/*	$.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a",function(res){
+		console.log(res)
+	})
+	$.ajax({
+		url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a",
+		type:"get",
+		dataType:'JSONP',
+		success:function(res){
+			console.log(res)
+		}
+	})*/
+</script>
